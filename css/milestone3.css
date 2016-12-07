@@ -104,6 +104,11 @@ body {
     padding: 30px;
 }
 
+.thumbnail {
+    width: 250px !important;
+    display: block;
+}
+
 /* Buttons */
 button:focus {
     outline:0;
@@ -113,6 +118,10 @@ button:focus {
     font-size: 16px;
     margin-top: 15px;
     height: 50px;
+}
+
+hr {
+    border-top: 1px solid grey;
 }
 
 .btn-group {

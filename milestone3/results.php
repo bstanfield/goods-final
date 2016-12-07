@@ -69,20 +69,6 @@ include "grading.php";
     $searchstring = "&grade=" . $_REQUEST["grade"];
 
     //    echo "<hr>" . $searchstring . "<hr>";
-
-    // previous button
-    if ($start != 1) {
-        // if the start isn't 1, then there are previous records we can access
-        echo "<a href='results.php?start=" . ($start-$count) . $searchstring . "'>Previous</a> | ";
-    }
-
-    // next button
-    if ($end < mysqli_num_rows($results)) {
-        // if there are more records, then display this end button. if not, no show
-        echo "<a href='results.php?start=" . ($end+1) . $searchstring . "'>Next</a>";
-
-    }
-
     // data seek starts the counter of the records not at 0, but at the place you designate. Here, it's $start-1.
     mysqli_data_seek($results, $start-1);
 
@@ -90,8 +76,9 @@ include "grading.php";
 
     while($currentrow = mysqli_fetch_array($results)) {
         echo "<a href='details.php?company=" . $currentrow[company_id] . "'>" .
-            $currentrow[company_name] . "</a>";
-        echo "<br>";
+            "<img class='thumbnail' src='../images/" . $currentrow[company_image] . "'>" .
+            "<h1>" . $currentrow[company_name] . "</h1></a><br><br>";
+
 
         if ($counter >= $end) {
             break;
@@ -100,6 +87,23 @@ include "grading.php";
         $counter++;
 
     }
+
+    echo "<hr>";
+
+    // previous button
+    if ($start != 1) {
+        // if the start isn't 1, then there are previous records we can access
+        echo "<p><a href='results.php?start=" . ($start-$count) . $searchstring . "'>Previous Page</a></p><br><br> ";
+    }
+
+    // next button
+    if ($end < mysqli_num_rows($results)) {
+        // if there are more records, then display this end button. if not, no show
+        echo "<p><a href='results.php?start=" . ($end+1) . $searchstring . "'>Next Page <span 
+        class='glyphicon glyphicon-chevron-right'></span></a></p><br><br>";
+
+    }
+
     ?>
 </div>
 
