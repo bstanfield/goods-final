@@ -7,11 +7,12 @@ include_once("analyticstracking.php");
       <div class="spotlight">
         <div class="row">
           <div class="col-md-7">
-              <h1><strong><em>Goods</em></strong> Weekly Company Spotlight</h1>
-                <p>Each bag of TOMS Roasting Co. coffee provides 140 liters of safe water, equal to a week's supply, to a person in need.</p>
-                <form method="get" action="http://bstanfie.student.uscitp.com/milestones/milestone2/admin_hub.php">
-                  <button type="submit" class="btn btn-success">See TOMS in our database</button>
-                </form>
+              <h1>Do you know who you're buying from?</h1>
+            <p></p>
+<!--                <p>Each bag of TOMS Roasting Co. coffee provides 140 liters of safe water, equal to a week's supply, to a person in need.</p>-->
+<!--                <form method="get" action="http://bstanfie.student.uscitp.com/milestones/milestone2/admin_hub.php">-->
+<!--                  <button type="submit" class="btn btn-success">See TOMS in our database</button>-->
+<!--                </form>-->
           </div>
         </div>
       </div>
