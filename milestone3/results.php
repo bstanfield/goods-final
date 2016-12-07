@@ -63,7 +63,6 @@ include "grading.php";
 
     echo "Displaying records " . $start . " through " . $end . "<br>";
     echo "<em>Your results returned <strong>" . mysqli_num_rows($results) . "</strong> results.</em>";
-    echo "<br><br>";
 
     $searchstring = "&grade=" . $_REQUEST["grade"];
 
@@ -93,19 +92,19 @@ include "grading.php";
     // previous button
     if ($start != 1) {
         // if the start isn't 1, then there are previous records we can access
-        echo "<p><a href='results.php?start=" . ($start-$count) . $searchstring . "'>Previous Page</a></p><br><br> ";
+        echo "<a style='font-size:25px' href='results.php?start=" . ($start-$count) . $searchstring . "'>Previous Page</a> ";
+        echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     }
 
     // next button
     if ($end < mysqli_num_rows($results)) {
         // if there are more records, then display this end button. if not, no show
-        echo "<p><a href='results.php?start=" . ($end+1) . $searchstring . "'>Next Page <span 
-        class='glyphicon glyphicon-chevron-right'></span></a></p><br><br>";
+        echo "<a style='font-size:25px' href='results.php?start=" . ($end+1) . $searchstring . "'>Next Page <span 
+        class='glyphicon glyphicon-chevron-right'></span></a>";
 
     }
 
+    echo "<br><br><br><br>";
+
     ?>
 </div>
-
-
-wasteful

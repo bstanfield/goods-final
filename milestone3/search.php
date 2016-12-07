@@ -87,7 +87,7 @@ if(mysqli_connect_errno()) {
         if($_SESSION[admin] == 1) {
 
             echo "<h1>Edit Companies</h1>
-        <form action = 'admin_edit.php' method = 'post' target='_blank'>
+        <form action = 'admin_edit.php'>
             <br>
             <select class='form-control' name='company'>
 
@@ -111,7 +111,7 @@ if(mysqli_connect_errno()) {
             <button type='submit' class='btn btn-success'>Edit Companies</button>
         </form>
 
-        <form action = 'admin_add.php' method = 'post' target='_blank'>
+        <form action = 'admin_add.php'>
             <button type='submit' class='btn btn-success'>Add Companies</button>
         </form>";
         }
@@ -120,4 +120,5 @@ if(mysqli_connect_errno()) {
 
     </div>
 </div>
+</body>
 </html>

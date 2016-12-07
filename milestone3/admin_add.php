@@ -1,10 +1,13 @@
-<html>
+<?php
+session_start();
 
-<head>
-    <title>Add Company to Goods Database</title>
-</head>
+include "head.php";
 
-<body>
+?>
+
+<br><br><br><br>
+<div class="company-container">
+
 <?php
 if(isset($_POST['add'])) {
 
@@ -43,27 +46,29 @@ if(isset($_POST['add'])) {
                cellpadding = "2">
 
             <tr>
-                <td width = "100">Company Name</td>
-                <td><input name = "company_name" type = "text"
+                <td width = "200">Company Name</td>
+                <td><input class="form-control" name = "company_name" type = "text"
                            id = "company_name"></td>
             </tr>
 
             <tr>
-                <td width = "100">Company Description</td>
-                <td><input name = "company_desc" type = "text"
-                           id = "company_desc"></td>
-            </tr>
-
-            <tr>
-                <td width = "100">Company URL</td>
-                <td><input name = "company_url" type = "text"
+                <td width = "200">Company URL</td>
+                <td><input class="form-control" name = "company_url" type = "text"
                            id = "company_url"></td>
             </tr>
 
             <tr>
-                <td width = "100"> </td>
+                <td width = "200">Company Description</td>
+                <td><textarea class="form-control" name = "company_desc" type = "text"
+                           id = "company_desc"></textarea></td>
+            </tr>
+
+
+            <tr>
+                <td width = "200"> </td>
                 <td>
-                    <input name = "add" type = "submit" id = "add"
+                    <br><br>
+                    <input class="btn btn-success" name = "add" type = "submit" id = "add"
                            value = "Add Company">
                 </td>
             </tr>
@@ -75,5 +80,6 @@ if(isset($_POST['add'])) {
 }
 ?>
 
+</div>
 </body>
 </html>

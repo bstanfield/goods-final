@@ -33,32 +33,32 @@ include_once("analyticstracking.php");
           </div>
         </div>
       </div>
-  <div class="section-split"></div>
-    <div class="container">
-      <div class="intro">
-        <h1>The Process</h1>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="panel">
-              </div>
-              <h3>Shop</h3>
-              <p>Shop like you normally would. No need to think about Goods just yet.</p>
-            </div>
-            <div class="col-md-4">
-              <div class="panel">
-              </div>
-              <h3>Look</h3>
-              <p>Compare what’s in your cart with what companies we recommend.</p>
-            </div>
-            <div class="col-md-4">
-              <div class="panel">
-              </div>
-              <h3>Learn</h3>
-              <p>Find out what brands you should and shouldn’t be buying from!</p>
-            </div>
-          </div>
-      </div>
-    </div>
+<!--  <div class="section-split"></div>-->
+<!--    <div class="container">-->
+<!--      <div class="intro">-->
+<!--        <h1>The Process</h1>-->
+<!--          <div class="row">-->
+<!--            <div class="col-md-4">-->
+<!--              <div class="panel">-->
+<!--              </div>-->
+<!--              <h3>Shop</h3>-->
+<!--              <p>Shop like you normally would. No need to think about Goods just yet.</p>-->
+<!--            </div>-->
+<!--            <div class="col-md-4">-->
+<!--              <div class="panel">-->
+<!--              </div>-->
+<!--              <h3>Look</h3>-->
+<!--              <p>Compare what’s in your cart with what companies we recommend.</p>-->
+<!--            </div>-->
+<!--            <div class="col-md-4">-->
+<!--              <div class="panel">-->
+<!--              </div>-->
+<!--              <h3>Learn</h3>-->
+<!--              <p>Find out what brands you should and shouldn’t be buying from!</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--      </div>-->
+<!--    </div>-->
 <!--  <div class="section-split"></div>-->
 <!--    <div class="container">-->
 <!--      <div class="intro">-->

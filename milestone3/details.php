@@ -69,13 +69,10 @@ if(!$results) {
     exit();
 }
 
-//overall score
-$overall = ($companyinfo['footp_rate'] + $companyinfo['waste_rate'] + $companyinfo['compe_rate'] +
-    $companyinfo['freed_rate'] + $companyinfo['condi_rate'] + $companyinfo['margi_rate'] +
-    $companyinfo['chari_rate']);
-
 
 include "grading.php";
+
+$grade = $companyinfo['company_grade'];
 
 ?>
 
@@ -88,7 +85,7 @@ include "grading.php";
                     <img src="http://bstanfie.student.uscitp.com/milestones/images/<?php echo $companyinfo[company_image] ?>">
                 </div>
                 <div class="company-score">
-                    <h1><?php echo "$companyinfo[company_name]" ?></h1>
+                    <h1><?php echo $companyinfo[company_name]; ?></h1>
 
                     <?php echo getBigGrade(); ?>
 
@@ -236,6 +233,17 @@ include "grading.php";
                     </table>
                 </div>
             </div>
+
+            <?php $companyinfo = mysqli_fetch_array($results); ?>
+
+            <form action="email_share.php">
+                <input value="<?php echo $companyinfo['company_id']; ?>" name="id" hidden>
+                <input value="<?php echo $companyinfo['company_name']; ?>" name="company" hidden>
+                <input value="<?php echo $grade; ?>" name="grade" hidden>
+                <button style="margin:20px 0 0 0" class="btn btn-info">Share by Email</button>
+            </form>
+            <br>
+            <hr style="border-top: 3px solid #ddd">
 
             <?php
             $count = 1;
