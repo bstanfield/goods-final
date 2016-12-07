@@ -33,7 +33,6 @@ if(mysqli_connect_errno()) {
 }
 ?>
 
-<br><br><br><br>
 <div>
     <div class="search-form">
         <h1>Goods by Rating</h1>
@@ -87,7 +86,7 @@ if(mysqli_connect_errno()) {
             <br>
             <select class="form-control" name="company">
 
-                <option value="">Select a Company</option>
+                <option value="" hidden>Select a Company</option>
                 <?php
                 $companies = "SELECT company_name, company_id FROM companies";
                 $results = mysqli_query($conn, $companies);

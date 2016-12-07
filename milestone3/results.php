@@ -77,8 +77,9 @@ include "grading.php";
     while($currentrow = mysqli_fetch_array($results)) {
         echo "<a href='details.php?company=" . $currentrow[company_id] . "'>" .
             "<img class='thumbnail' src='../images/" . $currentrow[company_image] . "'>" .
-            "<h1>" . $currentrow[company_name] . "</h1></a><br><br>";
+            "<h1 class='thumbnail-h1'>" . $currentrow[company_name] . "</h1></a>";
 
+        echo "<p>" . $currentrow[company_desc] . "</p>";
 
         if ($counter >= $end) {
             break;
