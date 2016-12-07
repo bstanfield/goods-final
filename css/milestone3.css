@@ -15,6 +15,7 @@ body {
     width: 50px;
     padding: 10px 0px 15px 0px;
     text-align: center;
+    margin-top: 3px;
 }
 
 #user-box img {
@@ -23,7 +24,7 @@ body {
 
 .nav-items {
     float: right;
-    padding-top: 12px;
+    padding-top: 8px;
     font-size: 15px;
     display: inline-block;
 }

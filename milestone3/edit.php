@@ -45,7 +45,8 @@ $results = mysqli_query($conn, $sql);
         ?>
 
             <input type="text" class="form-control login-field" name="username" value="<?php echo $_SESSION[username]; ?>">
-            <input type="text" class="form-control login-field" name="password" value="<?php echo $_SESSION[password]; ?>">
+            <input type="password" class="form-control login-field" name="password" value="<?php echo
+            $_SESSION[password]; ?>">
             <input type="hidden" name="user_id" value="<?php echo $_SESSION[user_id]; ?>">
             <button type='submit' class='login-button large'>Update Account Info</button>
         </form><br><br><br>

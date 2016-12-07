@@ -264,7 +264,7 @@ include "grading.php";
                     <div class="score-block">
                         <div class="meter-container">
                             <div class="meter-avg">
-                                <span style="width:80%"></span>
+                                <span style="width:60%"></span>
                             </div>
                         </div>
                         <div class="number">
@@ -290,7 +290,7 @@ include "grading.php";
                     <div class="score-block">
                         <div class="meter-container">
                             <div class="meter-avg">
-                                <span style="width:80%"></span>
+                                <span style="width:60%"></span>
                             </div>
                         </div>
                         <div class="number">
@@ -320,7 +320,7 @@ include "grading.php";
                     <div class="score-block">
                         <div class="meter-container">
                             <div class="meter-avg">
-                                <span style="width:80%"></span>
+                                <span style="width:60%"></span>
                             </div>
                         </div>
                         <div class="number">
@@ -346,7 +346,7 @@ include "grading.php";
                     <div class="score-block">
                         <div class="meter-container">
                             <div class="meter-avg">
-                                <span style="width:80%"></span>
+                                <span style="width:71%"></span>
                             </div>
                         </div>
                         <div class="number">
@@ -372,7 +372,7 @@ include "grading.php";
                     <div class="score-block">
                         <div class="meter-container">
                             <div class="meter-avg">
-                                <span style="width:80%"></span>
+                                <span style="width:55%"></span>
                             </div>
                         </div>
                         <div class="number">
@@ -399,7 +399,7 @@ include "grading.php";
                     <div class="score-block">
                         <div class="meter-container">
                             <div class="meter-avg">
-                                <span style="width:80%"></span>
+                                <span style="width:43%"></span>
                             </div>
                         </div>
                         <div class="number">
@@ -425,7 +425,7 @@ include "grading.php";
                     <div class="score-block">
                         <div class="meter-container">
                             <div class="meter-avg">
-                                <span style="width:80%"></span>
+                                <span style="width:66%"></span>
                             </div>
                         </div>
                         <div class="number">
