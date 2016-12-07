@@ -108,5 +108,4 @@ include "grading.php";
 </div>
 
 
-</body>
-</html>
+wasteful

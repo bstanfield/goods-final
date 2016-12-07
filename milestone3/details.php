@@ -163,7 +163,7 @@ include "grading.php";
                             </span></td>
                         </tr>
                         <tr>
-                            <td>Wastefullness</td>
+                            <td>Wastefulness</td>
                             <td><span class="A">
                                 <?php endif; ?>
                                 <?php if ($count == 3) : ?>
