@@ -1,34 +1,17 @@
 <?php
-session_start();
+include "head.php";
+include_once("analyticstracking.php");
 ?>
 
-<!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <title>Homepage</title>
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="../css/milestone2.css">
-    </head>
-    <body>
-    <?php include_once("analyticstracking.php") ?>
-    <?php include 'navigation.php';?>
-    <div class="milestone1">
-    </div>
     <div class="hero">
       <div class="spotlight">
         <div class="row">
           <div class="col-md-7">
-            <img class="houdini" src="../images/spotlight-toms.png">
               <h1><strong><em>Goods</em></strong> Weekly Company Spotlight</h1>
                 <p>Each bag of TOMS Roasting Co. coffee provides 140 liters of safe water, equal to a week's supply, to a person in need.</p>
                 <form method="get" action="http://bstanfie.student.uscitp.com/milestones/milestone2/admin_hub.php">
                   <button type="submit" class="btn btn-success">See TOMS in our database</button>
                 </form>
-          </div>
-          <div class="col-md-5">
-            <img class="show" src="../images/spotlight-toms.png">
           </div>
         </div>
       </div>
@@ -69,14 +52,14 @@ session_start();
           </div>
       </div>
     </div>
-  <div class="section-split"></div>
-    <div class="container">
-      <div class="intro">
-        <h1>The Extension</h1>
-          <p>Download the <strong>Goods Chrome Extension</strong> from the Google Play Store to compare items faster (coming soon).</p>
-          <button class="btn btn-success">Download Extension</button>
-      </div>
-    </div>
+<!--  <div class="section-split"></div>-->
+<!--    <div class="container">-->
+<!--      <div class="intro">-->
+<!--        <h1>The Extension</h1>-->
+<!--          <p>Download the <strong>Goods Chrome Extension</strong> from the Google Play Store to compare items faster (coming soon).</p>-->
+<!--          <button class="btn btn-success">Download Extension</button>-->
+<!--      </div>-->
+<!--    </div>-->
     <div class="footer">
     </div>
     </body>

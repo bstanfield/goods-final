@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html>
 <head><title>Goods</title></head>
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
@@ -24,4 +25,3 @@
 </style>
 <body>
 <?php include 'navigation.php';?>
-<br><br><br><br><br>

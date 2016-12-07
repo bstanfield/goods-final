@@ -45,7 +45,6 @@ $results = mysqli_query($conn, $sql);
         <div class="nav-items">
           <ul id="special-ul">
             <a href="search.php"><li>Search</li></a>
-            <a href="styleguide.php"><li>Future Search</li></a>
               <a href="#"><li>About</li></a>
           </ul>
 
@@ -92,4 +91,3 @@ $results = mysqli_query($conn, $sql);
         </div>
       </div>
     </div>
-</div>
