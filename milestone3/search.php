@@ -54,11 +54,7 @@ if(mysqli_connect_errno()) {
             </form>
 
             <div class="section-split"></div><br><br>
-
-        <?php
-        echo $_SESSION[admin];
-
-        ?>
+        
         <h1>Goods by Company</h1>
         <form action = "details.php">
             <br>
