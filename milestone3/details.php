@@ -7,6 +7,7 @@ include "head.php";
 
 ?>
 
+<br><br><br><br><br>
 <div class="container results">
     <div class="results-img">
         <?php

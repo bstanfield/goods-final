@@ -199,6 +199,12 @@ ul {
     max-width: 500px;
 }
 
+.thing {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
 .title {
     font-weight: 800;
     font-size: 18px;
@@ -432,7 +438,7 @@ select option {
 
 .panel {
     width: 100%;
-    background-color: lightgrey;
+    background-color: lightgrey !important;
     height: 150px;
 }
 
@@ -472,7 +478,7 @@ select option {
 }
 
 .compare {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /* Footer */

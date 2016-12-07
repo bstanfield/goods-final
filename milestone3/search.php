@@ -26,6 +26,7 @@ include "head.php";
 <?php
 
 $conn = mysqli_connect("uscitp.com", "jacksocb", "6634277976", "jacksocb_goods");
+$conn2 = mysqli_connect("uscitp.com", "jacksocb", "6634277976", "jacksocb_goods");
 
 if(mysqli_connect_errno()) {
     echo mysqli_connect_errno();
@@ -33,6 +34,7 @@ if(mysqli_connect_errno()) {
 }
 ?>
 
+<br><br><br><br>
 <div>
     <div class="search-form">
         <h1>Goods by Rating</h1>
@@ -53,6 +55,10 @@ if(mysqli_connect_errno()) {
 
             <div class="section-split"></div><br><br>
 
+        <?php
+        echo $_SESSION[admin];
+
+        ?>
         <h1>Goods by Company</h1>
         <form action = "details.php">
             <br>
@@ -81,34 +87,39 @@ if(mysqli_connect_errno()) {
         </form>
         <div class="section-split"></div>
         <br><br>
-        <h1>Edit Companies</h1>
-        <form action = "admin_edit.php" method = "post" target="_blank">
+        <?php
+        if($_SESSION[admin] == 1) {
+
+            echo "<h1>Edit Companies</h1>
+        <form action = 'admin_edit.php' method = 'post' target='_blank'>
             <br>
-            <select class="form-control" name="company">
+            <select class='form-control' name='company'>
 
-                <option value="" hidden>Select a Company</option>
-                <?php
-                $companies = "SELECT company_name, company_id FROM companies";
-                $results = mysqli_query($conn, $companies);
+                <option value='' hidden>Select a Company</option>";
 
-                if(!$results) {
-                    echo "db error " . mysqli_error($results);
-                    exit();
-                };
-                while($currentrow = mysqli_fetch_array($results)) {
+            $companies = "SELECT company_name, company_id FROM companies";
+            $results = mysqli_query($conn, $companies);
 
-                    echo "<option value='" . $currentrow['company_id'] . "'>"
-                        . $currentrow['company_name'] . "</option>";
-                }
-                ?>
-            </select>
+            if (!$results) {
+                echo "db error " . mysqli_error($results);
+                exit();
+            };
+            while ($currentrow = mysqli_fetch_array($results)) {
+
+                echo "<option value='" . $currentrow['company_id'] . "'>"
+                    . $currentrow['company_name'] . "</option>";
+            }
+
+            echo "</select>
             </br>
-            <button type="submit" class="btn btn-success">Edit Companies</button>
+            <button type='submit' class='btn btn-success'>Edit Companies</button>
         </form>
 
-        <form action = "admin_add.php" method = "post" target="_blank">
-            <button type="submit" class="btn btn-success">Add Companies</button>
-        </form>
+        <form action = 'admin_add.php' method = 'post' target='_blank'>
+            <button type='submit' class='btn btn-success'>Add Companies</button>
+        </form>";
+        }
+        ?>
         <br><br>
 
     </div>

@@ -6,7 +6,7 @@ if(empty($_REQUEST['grade'])) {
 include "head.php";
 
 ?>
-
+<br><br><br><br><br>
 <div class="container results">
     <div class="results-img">
         <?php
@@ -45,7 +45,6 @@ if(!$results) {
 include "grading.php";
 
 ?>
-
 <div class="container results">
     <?php
 
