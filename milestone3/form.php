@@ -8,7 +8,7 @@
         <input class="form-control login-field" type="password" name="password" placeholder="Password">
         <button type="submit" name="login" value="login" class="login-button">Login!</button>
     </form>
-    <form action="signup.php">
+    <form class="login" action="signup.php">
         <button type="submit" class="login-button">Sign Up</button>
     </form>
 </div>

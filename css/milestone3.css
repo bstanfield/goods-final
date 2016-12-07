@@ -143,6 +143,11 @@ button:focus {
     outline:0;
 }
 
+.buttons-container {
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
 .btn {
     font-size: 16px;
     margin-top: 15px;

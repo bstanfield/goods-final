@@ -45,7 +45,8 @@ $results = mysqli_query($conn, $sql);
         <div class="nav-items">
           <ul id="special-ul">
             <a href="search.php"><li>Search</li></a>
-              <a href="about.php"><li>About</li></a>
+              <a href="analytics.php"><li>Site Analytics</li></a>
+                <a href="about.php"><li>About</li></a>
           </ul>
 
                 <div class="dropdown">
