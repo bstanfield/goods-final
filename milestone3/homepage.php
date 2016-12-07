@@ -26,9 +26,11 @@ include_once("analyticstracking.php");
           <img src="../images/goods.png">
           <h1>Welcome to <strong>Goods</strong></h1>
           <p>Goods is a database that stores and categorizes companies by ethical and unethical business practices.</p>
-          <form method="get" action="http://bstanfie.student.uscitp.com/milestones/milestone2/admin_hub.php">
+          <div class="small-container">
+            <form method="get" action="./search.php">
             <button type="submit" class="btn btn-success">View our company search</button>
           </form>
+          </div>
         </div>
       </div>
   <div class="section-split"></div>
