@@ -81,12 +81,23 @@ body {
     margin: 0px;
 }
 
+.herobutton {
+    background: none;
+    border: 1px solid #fff;
+    width: 200px;
+}
+
+.herobutton:hover {
+    background: #fff;
+    color: #53a553;
+}
+
 .houdini {
     display: none;
 }
 
 .hero h1 {
-    font-size: 25px;
+    font-size: 40px;
     margin-top: 0px;
 }
 
@@ -97,7 +108,7 @@ body {
 
 .spotlight {
     padding-top: 160px;
-    width: 80%;
+    width: 65%;
     margin: auto;
     padding-bottom: 100px;
 }
@@ -496,7 +507,7 @@ select option {
 
     .hero img {
         padding: 0px;
-        width: 200px;
+        width: 100px;
         margin-bottom: 40px;
         margin-top: -20px;
     }

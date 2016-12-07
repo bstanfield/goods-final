@@ -45,7 +45,7 @@ $results = mysqli_query($conn, $sql);
         <div class="nav-items">
           <ul id="special-ul">
             <a href="search.php"><li>Search</li></a>
-              <a href="#"><li>About</li></a>
+              <a href="about.php"><li>About</li></a>
           </ul>
 
                 <div class="dropdown">
@@ -64,6 +64,7 @@ $results = mysqli_query($conn, $sql);
                                     if ($_REQUEST[username] == $currentrow[username] && $_REQUEST[password] == $currentrow[password]) {
                                         $_SESSION[loggedin] = true;
                                         $_SESSION[username] = $currentrow[username];
+                                        $_SESSION[admin] = $currentrow[admin];
                                         echo "<meta http-equiv='refresh' content='0;url = homepage.php' />";
                                         exit();
                                     }
