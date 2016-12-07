@@ -8,11 +8,17 @@ body {
     position: fixed;
     z-index: 999;
     border-bottom: 2px solid grey;
+    margin: auto;
 }
 
 .navigator img {
     width: 50px;
     padding: 10px 0px 15px 0px;
+    text-align: center;
+}
+
+#user-box img {
+    width: 100px;
 }
 
 .nav-items {
@@ -67,6 +73,10 @@ body {
 
 .focus {
     color: #5cb85c;
+}
+
+#user-box {
+    text-align: center;
 }
 
 .hero {
@@ -172,9 +182,10 @@ ul {
     padding-left: 5px;
 }
 .form-control {
-    height: 50px;
-    border-radius: 0px;
+    height: 40px;
+    border-radius: 2px;
     font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .image-box {
@@ -275,6 +286,14 @@ ul {
     width: 600px;
 }
 
+.login-button {
+    background: green;
+    height: 40px;
+    width: 100%;
+    color: white;
+    border: none;
+}
+
 /* Tables */
 
 .company-score .table .long {
@@ -364,6 +383,11 @@ span.b {
     margin: auto;
     max-width: 1000px;
     padding: 0px 0px 0px 0px;
+}
+
+.small-container {
+    width: 400px;
+    margin: auto;
 }
 
 .search-container {
